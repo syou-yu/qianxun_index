@@ -1,0 +1,339 @@
+/*
+* @Author: SXY-001
+* @Date:   2017-10-18 10:07:58
+* @Last Modified by:   SXY-001
+* @Last Modified time: 2017-10-20 15:41:12
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+html,
+body,
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section>div {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*header*/
+
+.logo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.music {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.play {
+    animation: play 6s linear infinite;
+}
+
+
+/*nav*/
+
+nav {
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.nav_list {
+    width: 840px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav_list li {
+    float: left;
+    width: 167px;
+    height: 50px;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    transition:1s;
+}
+
+.nav_list li span {
+    display: block;
+    margin: 12.5px 0;
+}
+
+.aboutus:hover {
+    background-color: #3592fa;
+}
+
+.versionlog:hover {
+    background-color: #f94254;
+}
+
+.jifen:hover {
+    background-color: #167e1e;
+}
+
+.appstore:hover {
+    background-color: purple;
+}
+
+.bbs:hover {
+    background-color: #97c118;
+}
+
+
+/*slide*/
+
+.slide {
+    position: fixed;
+    top: 50%;
+    margin-top: -128px;
+    right: 30px;
+    z-index: 1;
+    list-style: none;
+}
+
+.slide>li {
+    border: 1px solid #fe6a35;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.slide .current {
+    background: url(../images/side_bg.png);
+    background-size: 100%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-left: -5px;
+    animation: play 4s linear infinite;
+}
+
+@keyframes play {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*download*/
+
+.download {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    margin: -42px 0 0 -153px;
+    z-index: 1;
+}
+
+.download_btn {
+    cursor: pointer;
+}
+
+.download p {
+    color: white;
+    font-size: 14px;
+}
+
+
+/*screen*/
+
+section {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+section>div{
+    position: relative;
+}
+.title{
+    position:absolute;
+    bottom:40%;
+    left:0;
+    text-align:center;
+    width:100%; 
+}
+.title span{
+    display:inline-block;
+    background:url('../images/logo-text.png') center right no-repeat;
+    height:48px;
+    width:130px;
+    transition:2s;
+}
+.title>img{
+    transition:2s;
+}
+.title>p{
+    width:25%;
+    margin:10px auto;
+    font-size: 13px;
+    color:white;
+    line-height: 1.5em;
+    transition:2s;
+}
+.no span{
+    margin-right:-1200px;
+}
+.no>img{
+    transform:rotate(180deg);
+}
+.no p{
+    transform:scale(0.1);
+    opacity:0.1;
+}
+
+
+/* section .detail {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    margin-left: -160.5px;
+    color: white;
+    width: 321px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.screen_title {
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    margin-left: -164px;
+    animation: title 600ms linear 1;
+}
+
+.screen_title img:nth-child(1) {
+    width: 100px;
+    height: 50px;
+}
+
+.screen_title img:nth-child(2) {
+    margin: -10px -20px;
+}
+
+.screen_title img:nth-child(3) {
+    width: 212px;
+    height: 50px;
+}
+ */
+.screen1 {
+    background: url('../images/bg01.jpg');
+    background-size: 100% 100%;
+}
+.balloon{
+    position: absolute;
+    width: 124px;
+    height: 155px;
+    left: 50%;
+    margin-left: -62px;
+    margin-top: -70px;
+    animation: balloon1 4s linear infinite;
+}
+
+.cloud>img {
+    position: absolute;
+    top: 50px;
+    width:180px;
+    width:180px;
+    animation: cloud 60s linear infinite;
+}
+.cloud .scloud{
+    top: 300px;
+    animation: cloud 40s linear infinite;
+}
+
+
+.screen2 {
+    background: url('../images/bg02.jpg');
+    background-size: 100% 100%;
+
+}
+.screen2 .compass{
+    position: absolute;
+    width: 124px;
+    height: 140px;
+    left: 50%;
+    margin-left: -62px;
+    margin-top: -70px;
+    top:24%;
+}
+
+
+.screen3 {
+    background: url('../images/bg03.jpg');
+    background-size: 100% 100%;
+}
+
+.screen4 {
+    background: url('../images/bg04.jpg');
+    background-size: 100% 100%;
+}
+
+.screen5 {
+    background: url('../images/bg05.jpg');
+    background-size: 100% 100%;
+}
+
+.screen6 {
+    background: url('../images/bg06.jpg');
+    background-size: 100% 100%;
+}
+
+.screen7 {
+    background: url('../images/bg07.jpg');
+    background-size: 100% 100%;
+}
+
+@keyframes balloon1 {
+    0% {
+        top: 24%;
+    }
+    50% {
+        top: 26%;
+    }
+    100% {
+        top: 24%;
+    }
+}
+
+@keyframes cloud {
+    0% {
+        left: 80%;
+    }
+    100% {
+        left: 0;
+    }
+}
